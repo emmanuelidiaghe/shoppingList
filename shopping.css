@@ -1,6 +1,9 @@
+body {
+  margin: 20px;
+  background: linear-gradient(to right, green, cyan);
+}
 #main{
     position: relative;
-    background: linear-gradient(to right, green, cyan);
     overflow: hidden;
 }
 header {
@@ -28,42 +31,39 @@ header {
     padding-top: 0px;
 }
 #container {
-    display: block;
-    width: 300px;
-    height: 1000px;
+  margin: 20px;
     font-family: 'Kaushan Script', cursive;
-    margin: 10px auto 10px auto;
-    padding: 10px 20px;
     border-radius: 0.40rem;
-    color: #ffffff
+    color: #ffffff;
 }
-@media screen and (min-width: 550) {
-    #container {
-        width: 500px;
-    }
-  }
-@media screen and (min-width: 700px) {
-    #container {
-        width: 600px;
-    }
-  }
-@media screen and (min-width: 1000px) {
-    #container {
-        width: 850px;
-    }
-  }
   ul{
       color: black;
   }
 #shopping{
-  width: 50%;
-  float: left;
+  width: 100%;
+  margin: auto;
 }
 #css{
-  width: 50%;
-  float: left;
+  width: 100%;
   text-align: center;
 }
-#clear{
-  clear: both;
+
+
+@media screen and (max-width: 400px) {
+  #container {
+    display: inline;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  #container {
+    display: flex;
+      width: 100%;
+  }
+}
+@media screen and (min-width: 701px) {
+  #container {
+    display: flex;
+      width: 60%;
+}
 }

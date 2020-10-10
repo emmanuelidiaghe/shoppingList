@@ -6,7 +6,7 @@ var list = document.getElementById("list");
 var body = document.querySelector("body");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
-var main = document.getElementById("main");
+var main = document.querySelector("body");
 
 function action() {
     var li = document.createElement("li");
